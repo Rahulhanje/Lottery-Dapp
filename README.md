@@ -1,34 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## BTS Lottery DApp
 
-## Getting Started
+This project implements a decentralized lottery application (DApp) built on the Ethereum blockchain. 
 
-First, run the development server:
+### Project Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+The BTS Lottery DApp is a web-based application that allows users to participate in lottery draws. It uses smart contracts deployed on the Ethereum blockchain to ensure fair and transparent outcomes. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Features
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+* **Smart contract:** The core logic of the lottery is implemented in the `Lottery.sol` contract, ensuring that all operations are governed by the blockchain.
+* **Frontend:** The frontend is built with Next.js and React, providing a user-friendly interface for interacting with the lottery.
+* **Wallet connection:** Users can connect their Ethereum wallets to the DApp using WalletConnect, enabling them to participate in the lottery.
+* **Pot management:** The DApp tracks the total pot size and distributes winnings based on the contract's rules.
+* **Draw results:** The DApp displays the results of each lottery draw, ensuring that all participants can verify the fairness of the process.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Installation
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. **Prerequisites:**
+   * Node.js (version 18.18.0 or higher)
+   * npm or yarn
+   * Truffle
+   * MetaMask or a compatible Ethereum wallet
 
-## Learn More
+2. **Install dependencies:**
+   ```bash
+   npm install 
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+### Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Deploy the smart contract:**
+   ```bash
+   truffle migrate
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2. **Start the Next.js development server:**
+   ```bash
+   npm run dev 
+   ```
 
-## Deploy on Vercel
+3. **Open your browser and navigate to:** http://localhost:3000
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. **Connect your Ethereum wallet:** Click the "Connect Wallet" button and follow the prompts to connect your wallet.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+5. **Participate in the lottery:** Enter the amount you want to bet and click "Bet."
+
+6. **View draw results:** After a draw is complete, the results will be displayed on the homepage.
+
+### Contact Information
+
+For inquiries or feedback, please contact [your email address].

@@ -21,15 +21,15 @@ a {
 }
 
 .disconnectBtn {
-  background-color: #ff4d4d;
+  background-color: #ff4d4f;
   color: white;
+  padding: 8px 12px;
   border: none;
-  padding: 8px 16px;
+  border-radius: 4px;
   cursor: pointer;
   margin-left: 10px;
-  border-radius: 5px;
 }
 
 .disconnectBtn:hover {
-  background-color: #ff3333;
+  background-color: #ff7875;
 }
